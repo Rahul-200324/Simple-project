@@ -1,0 +1,23 @@
+kind: Deployment
+apiVersion: app/v1
+metadata:
+  Name: simple-hello-project
+
+spec:
+  replicas: 2
+  selector:
+    matchlabels:
+      app: simple-hello-project
+
+  template:
+    metadata:
+      labels:
+        app: simple-hello-project
+
+    spec:
+      containers:
+      - name: simple-hello-project
+        image: simple-hello-project:latest
+        ports:
+        - containerPort: 5005
+
