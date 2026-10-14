@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Hello guys, Welcome to Docker, Kubernetes and Jenkins CI-CD pipeline using Terraform with Linux operating system and terraform and AWS!"                   
+    return "Hello guys, Welcome to Docker, Kubernetes and Jenkins CI-CD pipeline using Terraform with Linux OS and terraform and AWS!"                   
 @app.route("/new")
 def new():
     return "FINAL CHECK"            
