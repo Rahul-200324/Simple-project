@@ -3,7 +3,7 @@ pipeline {
     agent any
 
     environment {
-        image_name = "hello-image:v1"
+        image_name = "rahul242003/hello-image"
     }
     stages {
         stage("git-checkout") {
